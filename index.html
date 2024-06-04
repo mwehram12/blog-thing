@@ -1,1 +1,43 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>Michael Wehram Personal Site</title> 
+ 
+    </head>
+    <body>
+    
+<!-- hier kann später eine Navi leiste eingefügt werden
+keiner weiß genau wie lang man einen Kommentar so machen kann
+aber da scheint einiges an luft zu sein-->
+
+        <h1>Michael Wehram Personal Site</h1>
+        <p><em>about free Software</em></p>
+<hr>       
+        <div id="current_date">
+    <script>
+        document.getElementById("current_date").innerHTML = Date();
+    </script>
+</div>
+    <br><br>
+    <hr>                      
+        <a href="/addd">BLOG</a> 	 <a href="/asdf">BIO</a> 	 <a href="/dsaf">IMPRESSUM</a>
+            
+         <h2>May 2024</h2>
+         
+        <h4>11th</h4>
+        
+        <p>Hallo, diese Seite befindet sich aktuell im Aufbau.</p>
+        <p>Bald geht es aber weiter. Die Seite wird sehr Textlastig.</p>
+        <p> Mit dem Release des Ubuntu 24.04 hat man die Möglichkeit den OneDrive Cloudspeicher nativ in Nautilus einzubinden. Im Moment ist es aber noch so, das nach einem ersten Connect die Verbindung nicht mehr zu Stande kommt und man quasi keine andere Wahl hat als das Konto wieder zu löschen und neu anzulegen. Aber auch dann ist der Zugriff nicht stabil. Deswegen hat man bei OMGUBUNTU einen Fix vorgestellt, der nach meinem ersten Test super funktioniert:
+
+Öffne  ~/.config/goa-1.0/accounts.conf in einem Texteditor
+Gehe in die Zeile in der OAuth2RedirectUri steht.
+Kopiere die Nummernfolge (Zahlen und Buchstaben) hinter localhost/hier ist deine ClientID
+Gehe zu der Zeile die mit OAuth2ClientId beginnt. Dort steht [Invalid UTF-8].
+Entferne das [Invalid UTF-8] und setze dafür deine ClientID ein.
+Speichern und danach ein Reboot, dann sollte die Einbindung nach dem nächsten Start stabil sein.</p>
+
+
+    </body>
+</html>
