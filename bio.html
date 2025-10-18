@@ -1,60 +1,151 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Wehram Personal Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-        nav {
-            background-color: #343a40;
-            padding: 1em;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 1em;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #adb5bd;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Wehram - Personal Blog</title>
+  <style>
+    /* Design: Weil es so toll aussieht */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: rgba(0,0,0,0.05);
+    }
+
+    main {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    article {
+      margin-bottom: 4rem;
+    }
+
+    article h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .date {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px) saturate(180%);
+      -webkit-backdrop-filter: blur(10px) saturate(180%);
+      padding: 0.4rem 0.8rem;
+      border-radius: 12px;
+      color: #111;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .date:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    article p {
+      font-size: 1.05rem;
+      margin: 0.5rem 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #e5e5e5;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>about Free Software and Open Source Stuff</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bio.html">Bio</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="bio.html">About</a></li>
+        <li><a href="impressum.html">Contact</a></li>
+      </ul>
     </nav>
-    <!-- hier kann später eine Navi leiste eingefügt werden
-keiner weiß genau wie lang man einen Kommentar so machen kann
-aber da scheint einiges an luft zu sein-->
+  </header>
 
-<h1>Michael Wehram Personal Site</h1>
-<p><em>about mySelf</em></p>
-<hr>       
-<div id="current_date">
-<script>
-document.getElementById("current_date").innerHTML = Date();
-</script>
-</div>
-<br><br>
-<hr> 
+  <main>
+    <!-- Blogeintrag -->
+
+      <article>
+      
+      <h2>about me</h2>
+      <p>
+        Ups, hier steht denmächst dann mehr. 
+      </p>
+    </article>
+
+    
+    <article>
+      
+     <!-- Platz für weitere Informationen -->
+
+    </article>
+
+    <!-- Neuer Eintrag: Einfach kopieren und oben einfügen -->
+   
+
+  </main>
+
+  <footer>
+    © 2025 Michael Wehram - Personal Blog
+  </footer>
+</body>
+</html>
